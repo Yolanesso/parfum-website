@@ -21,10 +21,9 @@ export default function CompaniesList() {
 
   return (
     <div className="companies">
-      <h1 className="companies__title text-center pt-[80px] py-[40px] text-[12px] font-bold uppercase font-manrope">
+      <h1 className="companies__title text-center pt-[40px] py-[40px] text-[12px] font-bold uppercase font-manrope">
         As seen in
       </h1>
-
       <div className="companies__list flex justify-center gap-[80px] ">
         {logos.map((logo, index) => (
           <img width={100} key={`${id} - ${index}`} src={logo.src} alt={logo.alt} />
