@@ -17,7 +17,7 @@ export default function NavPanel() {
                   shop
                 </a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item:">
                 <a href="#" className="nav__link uppercase font-manrope text-[16px] font-bold">
                   about
                 </a>
@@ -43,7 +43,7 @@ export default function NavPanel() {
       </div>
 
       <div className="header__info text-center mt-50  w-[700px] mx-auto ">
-        <h1 className="text-[80px] text-amber-50 leading-[100%] font-sentient">
+        <h1 className="text-[80px] text-amber-50 leading-[100%] font-sentient italic">
           Elevate everyday moments to extraordinary.
         </h1>
       </div>
