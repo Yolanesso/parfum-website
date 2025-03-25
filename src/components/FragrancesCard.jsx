@@ -10,6 +10,7 @@ const fragrances = [
     smell: 'strongly floral',
     src: jardineaImg,
     price: 39.95,
+    sale: true,
   },
   {
     name: 'Meadow',
@@ -17,7 +18,7 @@ const fragrances = [
     src: meadowImg,
     price: 39.95,
   },
-  { name: 'Lavanda', smell: 'calming', src: lavanda, price: 39.95 },
+  { name: 'Lavanda', smell: 'calming', src: lavanda, price: 39.95, sale: true },
   { name: 'Neroli', smell: 'deep & sweet', src: neroli, price: 39.95 },
 ];
 
@@ -29,7 +30,12 @@ export default function FragrancesCard() {
           key={index}
           className="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-16px)] max-w-xs"
         >
-          <div className="fragrances__card font-sentient flex flex-col items-center p-4">
+          <div className="fragrances__card font-sentient flex flex-col items-center p-4 relative">
+            {fragrance.sale ? (
+              <p className="absolute top-[30px] right-[30px] uppercase px-[16px] py-[8px] bg-[#E8A94C] rounded-3xl text-zinc-950 z-10">
+                On sale
+              </p>
+            ) : null}
             <img
               className="w-full h-64 object-contain mb-4"
               src={fragrance.src}

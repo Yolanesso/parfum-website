@@ -1,5 +1,4 @@
 import React, { useId } from 'react';
-
 import flowLogo from '../img/companies/flow.png';
 import intrendLogo from '../img/companies/intrend.png';
 import juneLogo from '../img/companies/june.png';
@@ -18,7 +17,6 @@ const logos = [
 
 export default function CompaniesList() {
   let id = useId();
-
   return (
     <div className="companies">
       <h1 className="companies__title text-center pt-[40px] py-[40px] text-[12px] font-bold uppercase font-manrope">
