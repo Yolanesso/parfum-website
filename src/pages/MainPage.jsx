@@ -4,6 +4,7 @@ import AdvertisingBlock from '../components/AdvertisingBlock';
 import CompaniesList from '../components/СompaniesList';
 import FragrancesCard from '../components/FragrancesCard';
 import ProductAdvertising from '../components/ProductAdvertising';
+import RunningLine from '../components/RunningLine';
 
 export default function MainPage() {
   return (
@@ -13,6 +14,7 @@ export default function MainPage() {
       <CompaniesList />
       <FragrancesCard />
       <ProductAdvertising />
+      <RunningLine />
     </>
   );
 }

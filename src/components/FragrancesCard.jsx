@@ -45,7 +45,7 @@ export default function FragrancesCard() {
               <h2 className="text-xl font-medium mb-2">{fragrance.name}</h2>
               <p className="text-sm uppercase text-gray-600 mb-3">{fragrance.smell}</p>
               <p className="text-lg mb-4">${fragrance.price.toFixed(2)}</p>
-              <button className="bg-[#ABB249] hover:bg-[#9ba042] text-white px-8 py-2 rounded-full uppercase text-sm transition-colors w-full max-w-xs">
+              <button className="bg-[#ABB249] mt-[20px] hover:bg-[#9ba042] text-black px-8 py-2 rounded-full uppercase font-manrope text-sm transition-colors w-full max-w-xs">
                 shop now
               </button>
             </div>
