@@ -11,10 +11,13 @@ export default function SafeInfo() {
             {safe.map((item, index) => (
               <div className="safe__card w-80  ">
                 <img className="safe__card-img mb-[12px]" key={index} src={item.src} alt="sheet" />
-                <h1 className="safe__card-title mb-[12px] " key={index}>
+                <h1
+                  className="safe__card-title mb-[12px] uppercase font-manrope font-[12px] font-bold "
+                  key={index}
+                >
                   {item.title}
                 </h1>
-                <p className="safe__card-info" key={index}>
+                <p className="safe__card-info font-manrope font-[16px] font-normal" key={index}>
                   {item.info}
                 </p>
               </div>
